@@ -10,7 +10,7 @@ import GoogleLogin from "../../../components/GoogleLogin";
 const Signin = () => {
 
     const onSignup = () => {
-
+        console.log('halo ges');
     }
 
     return (
