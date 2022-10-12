@@ -1,14 +1,13 @@
-import React from "react";
-import { StyleSheet } from "react-native";
-import { colors } from "../../../utils/colors";
+import { StyleSheet } from 'react-native';
+import { colors } from '../../../utils/colors';
 
 
 export const styles = StyleSheet.create({
     container: {
         padding: 24,
         flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
+        // justifyContent: 'center',
+        // alignItems: 'center',
         height: '100%'
 
     },
@@ -32,6 +31,7 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
         fontSize: 16,
-        marginTop: 30
+        marginTop: 30,
+        marginBottom: 80
     }
-}) 
+});

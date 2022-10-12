@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import {
     Pressable, View,
     Image, Text
-} from "react-native";
-import { styles } from "./styles";
+} from 'react-native';
+import { styles } from './styles';
 
 const AuthHeader = ({ title, onBackPress }) => {
 
@@ -14,7 +14,7 @@ const AuthHeader = ({ title, onBackPress }) => {
             </Pressable>
             <Text style={styles.title}>{title}</Text>
         </View>
-    )
-}
+    );
+};
 
-export default AuthHeader
+export default AuthHeader;

@@ -1,6 +1,6 @@
-import React, { memo } from "react";
-import { Image, TouchableOpacity } from "react-native";
-import { styles } from "./styles";
+import React from 'react';
+import { Image, TouchableOpacity } from 'react-native';
+import { styles } from './styles';
 import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin';
 
 const GoogleLogin = () => {
@@ -22,7 +22,7 @@ const GoogleLogin = () => {
                 // some other error happened
             }
         }
-    }
+    };
 
     return (
         <TouchableOpacity
@@ -32,7 +32,7 @@ const GoogleLogin = () => {
             style={styles.container} >
             <Image source={require('../../assets/google.png')} />
         </TouchableOpacity>
-    )
-}
+    );
+};
 
 export default React.memo(GoogleLogin);

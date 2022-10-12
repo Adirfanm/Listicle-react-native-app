@@ -1,8 +1,8 @@
-import React from "react";
-import { Text, View } from "react-native";
-import { styles } from "./styles";
+import React from 'react';
+import { Text, View } from 'react-native';
+import { styles } from './styles';
 
-const Separator = ({ text, onPress, style }) => {
+const Separator = ({ text }) => {
 
     return (
         <View style={styles.container}>
@@ -10,7 +10,7 @@ const Separator = ({ text, onPress, style }) => {
             <Text style={styles.text}>{text}</Text>
             <View style={styles.line}></View>
         </View>
-    )
-}
+    );
+};
 
-export default Separator
+export default Separator;

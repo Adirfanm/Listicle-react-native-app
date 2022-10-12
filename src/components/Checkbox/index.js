@@ -1,6 +1,6 @@
-import React from "react";
-import { Image, View, TouchableOpacity } from "react-native";
-import { styles } from "./styles";
+import React from 'react';
+import { Image, View, TouchableOpacity } from 'react-native';
+import { styles } from './styles';
 
 const Checkbox = ({ checked, onCheck }) => {
 
@@ -16,7 +16,7 @@ const Checkbox = ({ checked, onCheck }) => {
                 </View>
             ) : null}
         </TouchableOpacity>
-    )
-}
+    );
+};
 
-export default React.memo(Checkbox) 
+export default React.memo(Checkbox);
