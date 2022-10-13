@@ -55,11 +55,19 @@ const CreateListing = ({ navigation }) => {
                 name: img?.fileName,
                 type: img?.type,
             };
+        } else {
+            data.image = {
+                uri: 'asda',
+                name: 'asd',
+                type: 'asd',
+            };
         }
+
+        console.log('data sebmitted => ', data);
 
         const updatedServices = await addService(data);
         setServices(updatedServices);
-        setValues({});
+        // setValues({});
         navigation.navigate('MyListing');
     };
 

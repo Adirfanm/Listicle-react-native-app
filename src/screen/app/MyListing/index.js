@@ -36,6 +36,7 @@ const MyListing = ({ navigation }) => {
         <SafeAreaView>
             <Header title={'My Listing'} showBack onBackPress={goBack} />
             <FlatList
+                style={{ marginBottom: 72 }}
                 data={myServices}
                 renderItem={renderItem}
                 keyExtractor={item => String(item?._id)} />

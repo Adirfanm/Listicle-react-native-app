@@ -7,7 +7,8 @@ const FavoriteItem = ({ title, price, onPress, image, icon, onIconPress }) => {
 
     return (
         <Pressable onPress={onPress} style={styles.container}>
-            <Image style={styles.image} source={{ uri: `${Config.API_BASE_URL}/${image?.path}` }} />
+            <Image style={styles.image}
+                source={{ uri: image ? `${Config.API_BASE_URL}/${image?.path}` : null }} />
             <View style={styles.content}>
                 <Text style={styles.text}>{title}</Text>
                 <Text style={styles.price}>{price}</Text>
